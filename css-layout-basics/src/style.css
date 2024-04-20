@@ -1,0 +1,59 @@
+body {
+    box-sizing: border-box;
+}
+
+main {
+    width: 70%;
+    float: left;
+}
+
+aside {
+    position: relative;
+    width: 30%;
+    height: 150vh;
+    float: right;
+}
+
+header {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+}
+
+.info {
+    height: 460px;
+    overflow: auto;
+}
+
+form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.header_line {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.client_stories {
+    margin: var(--space-size);
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.features {
+    background: var(--primary-color);
+    padding-top: var(--space-size);
+    column-count: 2;
+    column-gap: 0;
+}
+
+h2 {
+    column-span: all;
+}

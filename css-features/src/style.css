@@ -1,0 +1,257 @@
+:root{
+    --light-gray: #f0f0f0;
+    --white: #ffffff;
+    --dark: #343638;
+    --black: #000000;
+    --gray: #A4A4A4;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0;
+    background-color: var(--light-gray);
+    font-family: Arial;
+    font-size: 14px;
+}
+
+h1, h2 {
+    text-decoration: none;
+    font-weight: normal;
+    margin: 1rem;
+    font-size: 2rem 2rem;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/apples.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+    height: 100vh;
+}
+
+.header_line, .footer_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav_top a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav_bottom a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.nav_top {
+    width: 40%;
+}
+
+.title_section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    letter-spacing: 0.3rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 0.7rem;
+}
+
+.title_element {
+    font-size: 4rem;
+}
+
+.header_button {
+    width: 300px;
+    height: 66px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    border: 2px solid var(--white);
+    margin: 5rem 0 0;
+    cursor: pointer;
+}
+
+.importat_words {
+    font-weight: bold;
+}
+
+article:first-child {
+    background-color: var(--white);
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-between;
+    padding: 0 3;
+}
+
+.article_title, .article_caption {
+    margin: 10rem 0;
+    width: 45%;
+}
+
+.like_button {
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    border: 2px solid var(--white);
+    color: var(--white);
+    background-color: var(--dark);
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.content_title{
+    text-align: center;
+    padding: 7rem 0 4rem;
+}
+
+.section_content {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-center;
+    margin: 1rem 3rem;
+}
+
+.content {
+    position: relative;
+    width: 65%;
+    cursor: pointer;
+    box-shadow: inset 0 0 60px 4px rgba(0, 0, 0, 1);
+}
+
+.content img {
+    position: relative;
+    width: 100%;
+    z-index: -1px;
+}
+
+.content_caption {
+    width: 30%;
+    text-align: center;
+}
+
+.content_date {
+    position: absolute;
+    bottom: 4%;
+    left: 2%;
+    color: var(--white);
+}
+
+.subscribe_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    margin: 3rem 3rem 0 0 0;
+    background-color: var(--white);
+}
+
+.subscribe_label {
+    min-width: max-content;
+    margin-right: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.email_input {
+    height: 42;
+}
+
+.email_input::placeholder {
+    color: var(--dark);
+    padding-left: 1;
+}
+
+.form input {
+    width: 100%;
+    background-color: var(--light-gray);
+}
+
+.subscribe_button {
+    background-color: var(--dark);
+    color: var(--white);
+    height: 3rem;
+    border: 0;
+    height: 48px;
+    max-height: 60px;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 3%;
+    background-color: var(--white);
+}
+
+.upper_footer_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem 3rem 1rem;
+}
+
+.upper_footer_section {
+    width: 22%;
+}
+
+.footer_content {
+    color: var(--gray);
+}
+
+.last_tweet {
+    font-style: italica;
+}
+
+.last_tweet_date {
+    color: var(--light-gray);
+}
+
+.footer_divide {
+    width: 94%;
+    height: 3px;
+    background-color: var(--light-gray);
+    border: 0;
+}
+
+.nav_bottom {
+    width: 35%;
+}
+
+.disabled {
+    display: none;
+}
