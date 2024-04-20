@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <title>HTML media</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <h1>NASA Voyager Program</h1>
+    <section>
+        <h2>Program Description</h2>
+
+        <p>
+            The Voyager program is an American scientific program that employs two robotic interstellar probes, Voyager
+            1 and Voyager 2.
+        </p>
+
+        <p>
+            They were launched in 1977 to take advantage of a favorable alignment of Jupiter and Saturn, to fly near
+            them while collecting data for transmission back to Earth.
+        </p>
+
+        <p>
+            After launch the decision was taken to send Voyager 2 near Uranus and Neptune to collect data for
+            transmission back to Earth.
+        </p>
+    </section>
+
+    <section>
+        <h2>Voyager Golden Record</h2>
+
+        <p>
+            Both spacecraft carry a 12-inch (30 cm) golden phonograph record that contains pictures and sounds of Earth,
+            symbolic directions on the cover for playing the record, and data detailing the location of Earth.
+        </p>
+
+        <p>
+            The record is intended as a combination time capsule and an interstellar message to any civilization, alien
+            or far-future human, that may recover either of the Voyagers.
+        </p>
+
+        <div id="audio">
+            <audio muted src="media/voyager_golden_record_sampler.mp3" controls>Your browser does not support the audio tag</audio>
+        </div>
+    </section>
+
+    <section>
+        <h2>Message to Voyager: Welcome to Interstellar Space Video</h2>
+
+        <div id="video">
+            <video controls loop>
+                <source src="media/message_to_voyager.webm" type="video/webm">
+                <source src="media/message_to_voyager.mp4" type="video/mp4">
+                <track src="media/english_message_to_voyager.vtt" kind="captions" srclang="en" label="English">
+                <track src="media/spanish_message_to_voyager.vtt" kind="captions" srclang="esp" label="Spanish">
+                Your browser does not support the video tag
+            </video>
+        </div>
+    </section>
+
+    <section>
+        <h2>Voyager: 35 Years Later Video</h2>
+
+        <div id="youtube">
+            <iframe width="560" height="315"
+                src="https://www.youtube-nocookie.com/embed/7Blfky0G3jo"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+</body>
+
+</html>
