@@ -1,0 +1,61 @@
+@import "variables";
+@import "placeholders";
+@import "mixins";
+@import "functions";
+
+main {
+    @include flexible-box(row, space-between, flex-start);
+    width: sum($small, $medium, $large, multiply(6, $block-margin));
+    margin: 0 auto;
+}
+
+.block {
+    &--small,
+    &--medium,
+    &--large {
+        @extend %block;
+    }
+
+    &--small {
+        width: $small;
+    }
+
+    &--medium {
+        width: $medium;
+    }
+
+    &--large {
+        width: $large;
+    }
+
+    &__title {
+
+        &--green,
+        &--blue,
+        &--orange {
+            @extend .block__title;
+        }
+
+        &--green {
+            background: $green-color;
+        }
+
+        &--blue {
+            background: $blue-color;
+        }
+
+        &--orange {
+            background: $orange-color;
+        }
+    }
+
+    &__description {
+        padding: $elem-padding;
+    }
+
+    &__notes {
+        padding: $elem-padding;
+        background: $grey-color;
+        font-style: italic;
+    }
+}

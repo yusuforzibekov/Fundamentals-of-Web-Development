@@ -1,0 +1,13 @@
+@function multiply($a, $b) {
+    @return $a * $b;
+}
+
+@function sum($numbers...) {
+    $result: 0;
+
+    @each $number in $numbers {
+        $result: $result + $number;
+    }
+
+    @return $result;
+}

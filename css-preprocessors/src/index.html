@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <title>CSS Preprocessors</title>
+  </head>
+  <body>      
+      <h1>CSS Preprocessors</h1>
+      <main>
+        <div class="block--medium">
+          <h2 class="block__title--green">Block</h2>
+          <p class="block__description">Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well.</p>
+          <p class="block__notes">Block names may consist of Latin letters, digits, and dashes. To form a CSS class, add a short prefix for namespacing: .block</p>
+        </div>
+        <div class="block--small">
+          <h2 class="block__title--blue">Element</h2>
+          <p class="block__description">Parts of a block and have no standalone meaning. Any element is semantically tied to its block</p>
+          <p class="block__notes">Element names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block name plus two underscores plus element name: .block__elem</p>
+        </div>
+        <div class="block--large">
+          <h2 class="block__title--orange">Modifier</h2>
+          <p class="block__description">Flags on blocks or elements. Use them to change appearance, behavior or state</p>
+          <p class="block__notes">Modifier names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block’s or element’s name plus two dashes: .block--mod or .block__elem--mod and .block--color-black with .block--color-red. Spaces in complicated modifiers are replaced by dash.</p>
+        </div>       
+      </main>
+  </body>
+</html>

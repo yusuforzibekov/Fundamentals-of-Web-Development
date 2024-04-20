@@ -1,0 +1,18 @@
+@import "mixins";
+@import "variables";
+
+%block {
+    @include flexible-box(column, space-between, center);
+    margin: 20px;
+    border: 2px solid $grey-color;
+    background: $white-color;
+    border-radius: 5px;
+}
+
+.block__title {
+    margin: 0;
+    font-size: 2rem;
+    padding: $elem-padding;
+    color: $white-color;
+    border-radius: 5px 5px 0 0;
+}

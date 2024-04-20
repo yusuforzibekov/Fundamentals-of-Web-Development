@@ -1,0 +1,37 @@
+{
+  "name": "task-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "cd ./src && live-server --port=7000",
+    "test": "npm run test:junit",
+    "test:local": "jest --reporters=default",
+    "test:watch": "jest --watchAll --reporters=default",
+    "test:junit": "jest --reporters=jest-junit",
+    "test:xunit": "jest",
+    "build": "echo \"Dummy build script\"",
+    "sass": "node-sass src/ -o src/css/ --recursive"
+  },
+  "author": "EPAM",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsdom": "^16.2.14",
+    "hex-rgb": "^5.0.0",
+    "html-validate": "^6.10.0",
+    "jest": "^28.0.2",
+    "jest-xunit": "^1.0.11",
+    "jsdom": "^19.0.0",
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "jest-junit": "^13.2.0",
+    "node-sass": "^9.0.0"
+  },
+  "jest-junit": {
+    "suiteName": "junit test results",
+    "outputDirectory": ".",
+    "outputName": "junit.xml"
+  }
+}
