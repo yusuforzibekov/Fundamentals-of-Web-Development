@@ -1,0 +1,7 @@
+@import 'mobile.css';
+
+@media screen and (min-width: 1024px) {
+    article p {
+        padding-right: 1rem;
+    }
+}

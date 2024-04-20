@@ -1,0 +1,284 @@
+/* Common */
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Header */
+.header_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_section {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius-size);
+}
+
+/* Main */
+main section div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 var(--space-size);
+}
+
+.column {
+    margin: var(--space-size);
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    padding: var(--space-size);
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.main-column {
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 22px;
+    height: 420px;
+    background: url('./images/cn-client-bg.jpeg') rgba(29, 14, 21, 0.3);
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: var(--space-size);
+    color: white;
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #000;
+}
+
+.card-first {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.card-second {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.card-third {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.card-fouth {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.card-fifth {
+    flex-grow: 4;
+    flex-shrink: 4;
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+.card-six {
+    flex-grow: 4;
+    flex-shrink: 4;
+    background: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: var(--space-size) calc(var(--space-size) * 2);
+}
+
+* {
+    font-family: source-sans-pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+/* Main section */
+main {
+    margin: 0 var(--space-size);
+}
+
+section {
+    margin-top: var(--space-size);
+}
+
+h2 {
+    margin: 0 calc(var(--space-size) * 2);
+}
+
+.card {
+    margin: var(--space-size);
+    border-radius: var(--border-radius-size);
+    background: var(--primary-color);
+    color: #000;
+}
+
+/* Header */
+header {
+    margin: 0 calc(var(--space-size) * 2);
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header button {
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 32px;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header h1 {
+    color: var(--secondary-color);
+    font-size: 40px;
+}
+
+.logo {
+    width: 150px;
+}
+
+figure img {
+    width: 400px;
+}
+
+figcaption {
+    font-size: 10px;
+    text-align: right;
+}
+
+/* Footer */
+address {
+    font-style: normal;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 10px;
+    text-align: right;
+}
+
+.logo-sm {
+    height: 64px;
+}
+
+/* Common styles */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 0 var(--space-size);
+}
+
+.scaled {
+    transition: all .2s ease-in-out;
+}
+
+.scaled:hover {
+    transform: scale(1.1);
+}
+
+.print-only {
+    display: none;
+}
+
+body {
+    color: #000;
+    hyphens: auto;
+}
+
+h1 {
+    color: #000;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    display: none;
+}
+
+footer img {
+    display: none;
+}
+
+.header_button {
+    display: none;
+}
+
+.title_section figure {
+    display: none;
+}
+
+.subtitle {
+    display: none;
+}
+
+.title_section {
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: block;
+}
+
+footer address {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+}
+
+footer address a::after {
+    margin-left: 5px;
+    content: attr(href);
+    text-decoration: underline;
+}
+
+@page {
+    margin-left: 2cm;
+}
+
+section h2 {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 7777px;
+    padding-right: 7777px;
+    padding-top: 0px;
+}

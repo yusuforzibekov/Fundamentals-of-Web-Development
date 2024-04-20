@@ -1,0 +1,118 @@
+body {
+    margin: var(--space-size);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, auto);
+    grid-area: header;
+    grid-template-areas:
+    "header header header header header header header header header header header header"
+    "main main main main main main main main main sidebar sidebar sidebar"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+/* Header */
+header {
+    border: 1px dashed;
+    grid-area: header;
+}
+
+/* Main */
+main {
+    border: 1px dashed;
+    grid-area: main;
+}
+
+.client_stories > div {
+    border: 1px dashed;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-gap: calc(var(--space-size)*2) 0;
+    justify-content: space-between;
+}
+
+.client_stories .column:first-of-type {
+    background: url('./images/cn-client-bg.jpeg') rgba(29, 14, 21, 0.3);
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: var(--space-size);
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.features > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-first {
+    order: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.card-second {
+    order: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.card-third {
+    order: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.card-fourth {
+    order: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.card-fifth {
+    background-color: white;
+    color: var(--secondary-color);
+    order: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.card-six {
+    background: var(--secondary-color);
+    color: white;
+    order: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Aside */
+aside {
+    display: grid;
+    grid-row: 2;
+    grid-template-rows: repeat(3, max-content);
+    border: 1px dashed;
+    grid-area: sidebar;
+    align-content: space-between;
+}
+
+/* Footer */
+footer {
+    border: 1px dashed;
+    grid-area: footer;
+}

@@ -1,0 +1,7 @@
+@media print {
+
+    /* Show elements with print-only class when printing */
+    .print-only {
+        display: block;
+    }
+}
